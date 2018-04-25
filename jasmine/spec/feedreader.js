@@ -91,8 +91,8 @@ $(function () {
         beforeEach(function (done) {
             loadFeed(0, function () {
                 firstFeedContent = document.querySelector('.feed').innerText;
+                loadFeed(1, done);
             });
-            loadFeed(1, done);
         });
 
         // test checks if the content (innerText) of the first two feeds results is different
